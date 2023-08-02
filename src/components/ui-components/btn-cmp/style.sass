@@ -1,0 +1,40 @@
+.hackathon-btn
+    display: flex 
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: background .2s
+    &__text 
+        color: $white
+        font-size: 20px
+
+    &:hover 
+        background-color: $hover-primary
+
+    &:active 
+        background-color: $pressed-primary        
+
+    &._secondary 
+        border: 1px solid $default-primary 
+        padding: 18px 32px 18px 24px
+        gap: 10px
+        border-radius: 4px
+
+    &._primary 
+        background-color: $default-primary
+        transition: background .2s
+        padding: 18px
+        gap: 10px
+        display: flex 
+        align-items: center
+        justify-content: center
+        &:hover 
+            background-color: $hover-primary 
+
+        &:active 
+            background-color: $pressed-primary
+
+    &._disabled
+        background-color: $disabled-primary    
+        border-color: $disabled-primary     
+        pointer-events: none

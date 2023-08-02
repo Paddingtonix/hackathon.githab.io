@@ -1,0 +1,55 @@
+.hackathon__leader-board 
+    &__title 
+        font-size: 40px
+        color: $white
+        margin-bottom: 48px
+
+    &__tabs 
+        margin-bottom: 34px
+
+    &__table
+        margin-bottom: 32px
+        &__row 
+            padding: 10px
+            border: 1px solid $gray
+            &:not(:first-child)
+                border-top: none
+
+            &__value 
+                color: $gray   
+                width: 277px
+                padding: 8px
+                
+    &__back 
+        width: 167px
+
+    &__upload-file 
+        margin-bottom: 32px
+        width: 42.392%
+        &__text 
+            gap: 8px
+            display: flex 
+            flex-direction: column
+            span 
+                color: $gray-text
+
+            &._error 
+                color: $error-input    
+
+        &__explanation
+            color: $gray-text   
+            margin-bottom: 32px
+            margin-top: 12px
+            display: flex 
+            align-items: center
+            gap: 4px
+
+    &__btns
+        gap: 16px
+        display: flex
+        align-items: center    
+        &._upload-file 
+            width: 42.392%
+            justify-content: space-between
+            .hackathon-btn 
+                width: 100%

@@ -1,0 +1,37 @@
+.hackathon__main-page
+    &__secondary-title
+        text-transform: uppercase
+        font-size: 20px
+        color: $gray
+        margin-bottom: 16px
+
+    &__primary-title
+        font-size: 72px
+        font-weight: 600
+        color: $white    
+        margin-bottom: 24px
+        span 
+            font-weight: 600
+            font-family: 'Unbounded'
+
+    &__desc-text
+        font-size: 18px     
+        color: $white
+
+    &__title-container
+        width: 54.683%
+        margin-bottom: 64px
+
+    &__tasks 
+        display: flex 
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: 64px
+        &__task 
+            &:not(:nth-last-child(-n + 2))
+                margin-bottom: 18px
+                
+    &__sponsors 
+        display: flex 
+        justify-content: space-between   
+        padding-bottom:  112px

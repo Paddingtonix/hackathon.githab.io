@@ -1,0 +1,54 @@
+body 
+    background-color: $background-main
+    overflow-x: hidden
+
+span, p, a, h1, h2, h3, h4, h5, h6, li, ul, input
+    font-style: normal
+    font-weight: 500
+    line-height: normal    
+
+button, span, p, input, label, a
+    font-family: 'Inter'
+
+a 
+    cursor: pointer    
+
+label 
+    pointer-events: none
+
+span 
+    display: inline-block
+
+h1, h2,h3, h3, h5, h6
+    font-family: 'Unbounded'
+
+.hackathon 
+    max-width: 1196px 
+    width: 100%
+    margin: 0 auto
+    overflow-x: hidden
+    &__container 
+        padding-top: 56px
+        min-height: 100vh
+        position: relative
+
+    &__link 
+        color: $white 
+        transition: color .2s
+        cursor: pointer
+        font-size: 16px
+        font-family: 'Unbounded'
+        &:hover 
+            color: $hover-link
+
+        &._selected 
+            color: $default-primary        
+    
+    &__primary-btn
+        color: $default-primary 
+        transition: color .2s
+        &:hover 
+            color: $hover-primary
+
+        &:active 
+            color: $pressed-primary    

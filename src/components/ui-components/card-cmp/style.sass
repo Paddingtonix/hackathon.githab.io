@@ -1,0 +1,38 @@
+.hackathon-card 
+    padding: 40px 32px
+    border: 1px solid $border-default
+    width: 49.415%
+    &__title 
+        display: flex 
+        align-items: center
+        gap: 16px
+        margin-bottom: 32px
+        &__index 
+            font-size: 20px
+            color: $dark-gray
+            font-family: 'Unbounded'
+
+        &__name 
+            font-size: 20px
+            color: $white    
+            font-family: 'Unbounded'
+
+    &__desc
+        font-size: 18px
+        color: $gray   
+        margin-bottom: 12px  
+
+    &__more
+        a
+            color: $dark-gray    
+            cursor: pointer
+            transition: color .2s
+            &:hover 
+                color: $white
+
+        &._is-auth
+            margin-bottom: 32px 
+            
+    &__upload
+        font-size: 18px
+        font-weight: 500   
